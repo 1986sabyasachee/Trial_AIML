@@ -10,11 +10,17 @@ class A
     b=b1;
   System.out.println("settre method");
   }
-  void getter() throws Exception
+  void getter() 
   {
+    try{
     Scanner sc=new Scanner(System.in);
     int c=sc.nextInt();
+    
     System.out.println("getter ...."+ (a+b+c));
+    }catch(Exception e)
+      {
+        System.out.println(e.getMessage());
+      }
   }
 }
 //  public static void main(String args[])
