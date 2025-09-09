@@ -10,7 +10,7 @@ class A
     b=b1;
   System.out.println("settre method");
   }
-  void getter()
+  void getter() throws Exception
   {
     Scanner sc=new Scanner(System.in);
     int c=sc.nextInt();
